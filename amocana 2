@@ -1,0 +1,13 @@
+func unikaluri(x: [Int], y: [Int]) -> Set<Int>{
+    var y = Set<Int>()
+        for i in x{
+            for n in y{
+                if n == i{
+                    y.insert(n)
+                }
+            }
+        }
+        return(y)
+}
+var value = unikaluri(x: [1,2,3,4,5,6,7,8,9,8,0], y: [9,8,7,6,6,5,4,3])
+print(value)
