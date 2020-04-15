@@ -1,0 +1,10 @@
+func unikaluri(x: [Int]) -> (Int){
+var y = Set<Int>()
+for i in x {
+  y.insert(i)
+}
+  let z = y.count
+return(z)
+}
+var value = unikaluri (x: [1,2,2,2,3,4,5,6,7,8,8])
+print(value)
