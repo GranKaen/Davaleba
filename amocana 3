@@ -1,0 +1,13 @@
+func unikaluri(x: [Int], y: [Int]) -> Set<Int>{
+    var z = Set<Int>()
+        for i in x {
+            z.insert(i)
+        }
+        for n in y {
+            z.insert(n)
+        }
+         
+        
+        return(z)
+}
+print(unikaluri(x: [1,2,3,4,5,6,7,8,9,8,0], y: [9,8,7,6,6,5,4,3]))
