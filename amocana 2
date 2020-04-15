@@ -1,9 +1,9 @@
 func unikaluri(x: [Int], y: [Int]) -> Set<Int>{
-    var y = Set<Int>()
+    var z = Set<Int>()
         for i in x{
             for n in y{
                 if n == i{
-                    y.insert(n)
+                    z.insert(n)
                 }
             }
         }
