@@ -1,0 +1,48 @@
+struct post {
+    var name: String
+    var category: String
+    var rating: Double
+}
+class bloggeri {
+    var username = "Udardela"
+    var p: [post] = []
+     func postebi(name: String, category: String, rating: Double) {
+        self.p.append(post(name: name, category: category, rating: rating))
+    }
+    func postebisShigtavsi() {
+        for post in p {
+            print("")
+            print("postis saxeli: \(post.name)")
+            print("kategoria: \(post.category)")
+            print("+5_ebis raodenoba: \(post.rating)")
+        }
+    }
+func yvelaze_sakaifo_reitingi() {
+  var stuff: Double = 0
+     for post in p {
+         if post.rating > stuff {
+             stuff = post.rating
+         }
+       else {
+            continue
+         }
+         print("Yvelaze popularuli posti: \(post.name)")
+     }
+    }
+    func sashualo() {
+       var sum: Double = 0
+        for post in p {
+           sum += post.rating
+        }
+        print("sashualo reitingi: \(sum/Double(p.count))")
+    }
+    }
+    let posti = bloggeri()
+ print("Bloggeri: \(posti.username)")
+posti.postebi(name: "Chadraki", category: "Sport", rating: 4.9)
+posti.postebi(name: "Chadraki is a sport", category: "martla", rating: 4.3)
+posti.postebi(name: "No Joking", category: "Lol", rating: 4.8)
+posti.postebi(name: "Karantini", category: "Mombezrda", rating: 1.0)
+  posti.sashualo()
+ posti.yvelaze_sakaifo_reitingi()
+posti.postebisShigtavsi()
