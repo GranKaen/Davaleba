@@ -1,0 +1,137 @@
+informatics.ge
+
+
+1)////////////////////////////Hello World
+func doStuff(x: String) -> String{
+    return "hello world"
+    
+}
+print(doStuff(x: "dostuff"))
+
+2)////////////////////////////აკვარიუმი
+func doStuff(x: Int, y: Int) -> String{
+    if y*3 < x{
+        return("NO")
+    }
+    else {
+        let z:Int = x/3
+        let k:Int = y-z
+        return("YES \(k)")
+    }
+}
+print(doStuff(x: 128, y: 39))
+
+3)///////////////////////////სამკუთხედის აგება
+func doStuff(x: Int, y: Int, z: Int) -> String{
+    if x + y > z && x + z > y && z + y > x{
+        return("YES")
+    }
+    else{
+        return("NO")
+    }
+}
+print(doStuff(x: 12, y: 19, z: 14))
+
+4)///////////////////////////გამყოფების რაოდენობა
+func doStuff(x: Int) -> Int{
+    var k:Int = 0
+    for i in 1...x{
+        if x % i == 0{
+          k+=1  
+        }
+
+    }
+    return(k)
+}
+print(doStuff(x: 25 ))
+
+5)///////////////////////////კენტი რიცხვების ჯამი
+func doStuff(pirveli: Int, meore: Int) -> Int{
+var o:Int = 0
+
+for i in pirveli...meore{
+    if i%2==1{
+        o += i
+    }
+    
+}
+return(o)
+}
+print(doStuff(pirveli:22,meore:29))
+
+6)////////////////////////////3*N+1(cota shecvlili)
+func doStuff(x :Int) -> (k: [Int] , o: Int){
+var o = 0
+var w = x
+var k = [Int]()
+while w > 1{
+    if w%2==0{
+        w/=3
+        o+=1
+        k.append(w)
+    }
+    else{
+        w*=4
+        o+=1
+        k.append(w)
+    }
+    
+}
+return(k , o)
+
+}
+
+print(doStuff(x: 23))
+
+7)////////////////////////////////გამრავლება
+func doStuff(x :Int) -> Int{
+let k = x/10
+let o = x%10
+let e = x/100
+let t = x%100
+
+
+if k*o > e*t{
+    return(k*o)
+}
+else{
+    return(e*t)
+}
+}
+
+print(doStuff(x: 358))
+
+8)////////////////////////////////////ციფრთა ჯამი
+func doStuff(x :Int) -> Int{
+var c = 0
+var y = x
+while y/10 != 0{
+    c+=y%10
+    y/=10
+}
+return(y+c)
+}
+
+print(doStuff(x: 358))
+
+9)////////////////////////////////////ორი ლიფტი
+func doStuff(x :Int, y: Int, z: Int) -> Int{
+var a = 0
+    if abs(x-z) > abs(y-z){
+        a = 2
+        return(a)
+    }
+    else if abs(x-z) == abs(y-z){
+    a = 1
+    return(a)
+        
+    }
+    else{
+        a = 1
+        return(a)
+    }
+}
+
+print(doStuff(x: 2, y: 8, z: 5))
+
+10)////////////////////////////////////დაზიანებული კლავიატურა
