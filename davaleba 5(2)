@@ -1,0 +1,48 @@
+protocol reminder {
+    var value: Int {get}
+   func reminder() -> Int 
+      
+}
+ class pirveli: reminder {
+     var value: Int
+     init(value: Int) {
+         self.value = value
+     }
+     func reminder() -> Int {
+         return value%10
+     }
+ }
+  class meore: reminder {
+     var value: Int
+     init(value: Int) {
+         self.value = value
+     }
+     func reminder() -> Int {
+         return value%10
+     }
+ }
+  class mesame: reminder {
+     var value: Int
+     init(value: Int) {
+         self.value = value
+     }
+     func reminder() -> Int {
+         return value%10
+     }
+ }
+let value1 = pirveli(value: 11)
+let value2 = pirveli(value: 22)
+let value3 = pirveli(value: 33)
+let value4 = meore(value: 44)
+let value5 = meore(value: 55)
+let value6 = meore(value: 66)
+let value7 = mesame(value: 77)
+let value8 = mesame(value: 88)
+let value9 = mesame(value: 99)
+ 
+let arr: [reminder] = [value1, value2, value3, value4, value5, value6, value7, value8, value9]
+ var finalr = 0
+for num in arr {
+    finalr += num.reminder()
+    }
+    print(finalr)
