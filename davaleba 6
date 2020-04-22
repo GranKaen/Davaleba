@@ -1,0 +1,36 @@
+class Base{
+    var Name: String 
+    var Date: String
+    var office: String
+    var Chairman: String
+    
+    init(Name: String, Date: String, office: String, Chairman: String){
+        self.Name = Name
+        self.Date = Date
+        self.office = office
+        self.Chairman = Chairman
+    }
+    func NameReturn() -> String{
+        return "Hello, My name is \(Name)!"
+    }
+    func DateReturn() -> String{
+        return "I was founded in \(Date)"
+    }
+    func officeReturn() -> String{
+        return "My headquarters is in \(office)"
+    }
+    func ChairmanReturn() -> String{
+        return "My Chairman is \(Chairman)"
+    }
+}
+class Apple: Base{}
+class Facebook: Base{}
+class Google: Base{}
+
+let a = Apple(Name: "Apple", Date: "1978", office: "California", Chairman: "Arthur D. Levinson")
+
+let f = Facebook(Name: "Facebook", Date: "2004", office: "California", Chairman: "Mark")
+
+let g = Google(Name: "Google", Date: "1998", office: "California", Chairman: "Eric Schmidt ")
+
+print(Apple.NameReturn)
