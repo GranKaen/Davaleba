@@ -20,7 +20,7 @@ class ViewController: UIViewController, AddNewsdelegate {
     
     
     @IBAction func ScrollUpButton(_ sender: UIBarButtonItem) {
-        
+        tableView.SetContentOffset(.zero, animated:true)
     }
     
     @IBAction func AddBarB(_ sender: UIBarButtonItem) {
