@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06E0519324642596003CF408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0519224642596003CF408 /* AppDelegate.swift */; };
+		06E0519524642596003CF408 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0519424642596003CF408 /* SceneDelegate.swift */; };
+		06E0519724642596003CF408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0519624642596003CF408 /* ViewController.swift */; };
+		06E0519A24642596003CF408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E0519824642596003CF408 /* Main.storyboard */; };
+		06E0519C246425D1003CF408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06E0519B246425D1003CF408 /* Assets.xcassets */; };
+		06E0519F246425D1003CF408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E0519D246425D1003CF408 /* LaunchScreen.storyboard */; };
+		06E051A72464338F003CF408 /* CallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E051A62464338F003CF408 /* CallsViewController.swift */; };
+		06E051A9246433A3003CF408 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E051A8246433A3003CF408 /* ChatViewController.swift */; };
+		06E051AB246433B4003CF408 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E051AA246433B4003CF408 /* SettingsViewController.swift */; };
+		06E051AD24643403003CF408 /* CallsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E051AC24643403003CF408 /* CallsCell.swift */; };
+		06E051AF24643410003CF408 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E051AE24643410003CF408 /* ChatCell.swift */; };
+		06E051B12464341E003CF408 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E051B02464341E003CF408 /* SettingsCell.swift */; };
+		06E051B324643A70003CF408 /* addtochatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E051B224643A70003CF408 /* addtochatViewController.swift */; };
+		06E051B724644AD6003CF408 /* messagestruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E051B624644AD6003CF408 /* messagestruct.swift */; };
+		06E051B92464574F003CF408 /* tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E051B82464574E003CF408 /* tabbar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06E0518F24642595003CF408 /* Davaleba Whatsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Davaleba Whatsapp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06E0519224642596003CF408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		06E0519424642596003CF408 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		06E0519624642596003CF408 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		06E0519924642596003CF408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06E0519B246425D1003CF408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06E0519E246425D1003CF408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		06E051A0246425D1003CF408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06E051A62464338F003CF408 /* CallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsViewController.swift; sourceTree = "<group>"; };
+		06E051A8246433A3003CF408 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		06E051AA246433B4003CF408 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		06E051AC24643403003CF408 /* CallsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsCell.swift; sourceTree = "<group>"; };
+		06E051AE24643410003CF408 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		06E051B02464341E003CF408 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		06E051B224643A70003CF408 /* addtochatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addtochatViewController.swift; sourceTree = "<group>"; };
+		06E051B624644AD6003CF408 /* messagestruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messagestruct.swift; sourceTree = "<group>"; };
+		06E051B82464574E003CF408 /* tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabbar.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06E0518C24642594003CF408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06E0518624642593003CF408 = {
+			isa = PBXGroup;
+			children = (
+				06E0519124642595003CF408 /* Davaleba Whatsapp */,
+				06E0519024642595003CF408 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06E0519024642595003CF408 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06E0518F24642595003CF408 /* Davaleba Whatsapp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06E0519124642595003CF408 /* Davaleba Whatsapp */ = {
+			isa = PBXGroup;
+			children = (
+				06E0519224642596003CF408 /* AppDelegate.swift */,
+				06E0519424642596003CF408 /* SceneDelegate.swift */,
+				06E0519624642596003CF408 /* ViewController.swift */,
+				06E0519824642596003CF408 /* Main.storyboard */,
+				06E0519B246425D1003CF408 /* Assets.xcassets */,
+				06E0519D246425D1003CF408 /* LaunchScreen.storyboard */,
+				06E051A0246425D1003CF408 /* Info.plist */,
+				06E051A62464338F003CF408 /* CallsViewController.swift */,
+				06E051AC24643403003CF408 /* CallsCell.swift */,
+				06E051AA246433B4003CF408 /* SettingsViewController.swift */,
+				06E051B02464341E003CF408 /* SettingsCell.swift */,
+				06E051A8246433A3003CF408 /* ChatViewController.swift */,
+				06E051AE24643410003CF408 /* ChatCell.swift */,
+				06E051B224643A70003CF408 /* addtochatViewController.swift */,
+				06E051B624644AD6003CF408 /* messagestruct.swift */,
+				06E051B82464574E003CF408 /* tabbar.swift */,
+			);
+			path = "Davaleba Whatsapp";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06E0518E24642594003CF408 /* Davaleba Whatsapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06E051A3246425D1003CF408 /* Build configuration list for PBXNativeTarget "Davaleba Whatsapp" */;
+			buildPhases = (
+				06E0518B24642594003CF408 /* Sources */,
+				06E0518C24642594003CF408 /* Frameworks */,
+				06E0518D24642594003CF408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Davaleba Whatsapp";
+			productName = "Davaleba Whatsapp";
+			productReference = 06E0518F24642595003CF408 /* Davaleba Whatsapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06E0518724642593003CF408 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = homework;
+				TargetAttributes = {
+					06E0518E24642594003CF408 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 06E0518A24642593003CF408 /* Build configuration list for PBXProject "Davaleba Whatsapp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06E0518624642593003CF408;
+			productRefGroup = 06E0519024642595003CF408 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06E0518E24642594003CF408 /* Davaleba Whatsapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06E0518D24642594003CF408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06E0519F246425D1003CF408 /* LaunchScreen.storyboard in Resources */,
+				06E0519C246425D1003CF408 /* Assets.xcassets in Resources */,
+				06E0519A24642596003CF408 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06E0518B24642594003CF408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06E0519724642596003CF408 /* ViewController.swift in Sources */,
+				06E051AF24643410003CF408 /* ChatCell.swift in Sources */,
+				06E051B12464341E003CF408 /* SettingsCell.swift in Sources */,
+				06E051B324643A70003CF408 /* addtochatViewController.swift in Sources */,
+				06E0519324642596003CF408 /* AppDelegate.swift in Sources */,
+				06E051A72464338F003CF408 /* CallsViewController.swift in Sources */,
+				06E051AD24643403003CF408 /* CallsCell.swift in Sources */,
+				06E051B92464574F003CF408 /* tabbar.swift in Sources */,
+				06E051A9246433A3003CF408 /* ChatViewController.swift in Sources */,
+				06E0519524642596003CF408 /* SceneDelegate.swift in Sources */,
+				06E051B724644AD6003CF408 /* messagestruct.swift in Sources */,
+				06E051AB246433B4003CF408 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		06E0519824642596003CF408 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06E0519924642596003CF408 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		06E0519D246425D1003CF408 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06E0519E246425D1003CF408 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06E051A1246425D1003CF408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		06E051A2246425D1003CF408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06E051A4246425D1003CF408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UF7RF9KF4G;
+				INFOPLIST_FILE = "Davaleba Whatsapp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Home.Davaleba-Whatsapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06E051A5246425D1003CF408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UF7RF9KF4G;
+				INFOPLIST_FILE = "Davaleba Whatsapp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Home.Davaleba-Whatsapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06E0518A24642593003CF408 /* Build configuration list for PBXProject "Davaleba Whatsapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06E051A1246425D1003CF408 /* Debug */,
+				06E051A2246425D1003CF408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06E051A3246425D1003CF408 /* Build configuration list for PBXNativeTarget "Davaleba Whatsapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06E051A4246425D1003CF408 /* Debug */,
+				06E051A5246425D1003CF408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06E0518724642593003CF408 /* Project object */;
+}
