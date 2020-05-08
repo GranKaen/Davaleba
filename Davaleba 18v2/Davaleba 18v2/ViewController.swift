@@ -94,7 +94,8 @@ extension ViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let fulltextVC = storyboard.instantiateViewController(withIdentifier: "edit_id")
+        let fulltextVC = storyboard.instantiateViewController(withIdentifier: "view_id")
+        
         if let unwrappedVC = fulltextVC as? viewpage{
             unwrappedVC.textforfull = array[indexPath.row]
         }
