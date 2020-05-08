@@ -31,7 +31,5 @@ class editpage: UIViewController {
         
         
     }
-   func readText(url: URL) -> String {
-       return try! String(contentsOf: url)
-   }
+   
 }
