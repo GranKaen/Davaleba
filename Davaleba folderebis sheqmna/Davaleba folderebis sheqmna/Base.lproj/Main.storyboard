@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CZr-gI-DEP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Davaleba_folderebis_sheqmna" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9cC-lu-vDL">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c5B-rM-gkV">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionviewcell_id" id="bKQ-Yz-UgL" customClass="CollectionViewCell" customModule="Davaleba_folderebis_sheqmna" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pwR-Kg-QGl">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yTu-Ky-TtQ">
+                                                    <rect key="frame" x="8" y="9" width="112" height="88.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="112" id="GBj-gB-cYg"/>
+                                                        <constraint firstAttribute="height" constant="91" id="SxF-U7-Kqs"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTE-lT-hhD">
+                                                    <rect key="frame" x="8" y="99" width="112" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yTu-Ky-TtQ" firstAttribute="top" secondItem="pwR-Kg-QGl" secondAttribute="top" constant="8" id="7pY-On-rmn"/>
+                                                <constraint firstAttribute="bottom" secondItem="tTE-lT-hhD" secondAttribute="bottom" constant="8" id="9ak-cZ-RDX"/>
+                                                <constraint firstItem="tTE-lT-hhD" firstAttribute="leading" secondItem="pwR-Kg-QGl" secondAttribute="leading" constant="8" id="HaT-DM-7nb"/>
+                                                <constraint firstAttribute="trailing" secondItem="tTE-lT-hhD" secondAttribute="trailing" constant="8" id="Tq5-LU-EA1"/>
+                                                <constraint firstAttribute="trailing" secondItem="yTu-Ky-TtQ" secondAttribute="trailing" constant="8" id="Whi-Xw-0bd"/>
+                                                <constraint firstItem="tTE-lT-hhD" firstAttribute="top" secondItem="yTu-Ky-TtQ" secondAttribute="bottom" id="bk3-3B-4aA"/>
+                                                <constraint firstItem="yTu-Ky-TtQ" firstAttribute="leading" secondItem="pwR-Kg-QGl" secondAttribute="leading" constant="8" id="cRG-aK-3rZ"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="Foldername" destination="tTE-lT-hhD" id="zfQ-L9-4UZ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9cC-lu-vDL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PdN-Hi-mcL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9cC-lu-vDL" secondAttribute="bottom" id="VvM-W2-aZA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9cC-lu-vDL" secondAttribute="trailing" id="cSA-dP-h5f"/>
+                            <constraint firstItem="9cC-lu-vDL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tfq-ZC-aqJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rgV-WB-iwT">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="QpH-gA-kIb">
+                            <connections>
+                                <action selector="AddFolder:" destination="BYZ-38-t0r" id="01D-2o-pk9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionview" destination="9cC-lu-vDL" id="wEA-BQ-iAu"/>
+                        <segue destination="2SA-KW-q16" kind="push" id="7IH-tl-osG"/>
+                        <segue destination="50e-Jc-Eaw" kind="push" id="Nex-8g-2fK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="97.767857142857139"/>
+        </scene>
+        <!--Add Folder View Controller-->
+        <scene sceneID="HsW-UV-LQi">
+            <objects>
+                <viewController storyboardIdentifier="addfolder_id" id="50e-Jc-Eaw" customClass="AddFolderViewController" customModule="Davaleba_folderebis_sheqmna" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Fi-83-1W7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="FolderName:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a6q-Wp-Wxz">
+                                <rect key="frame" x="20" y="299" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23r-nI-2Nk">
+                                <rect key="frame" x="102" y="485" width="210" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="LZu-qc-uRE"/>
+                                    <constraint firstAttribute="height" constant="90" id="QW6-qp-dNo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addfolder:" destination="50e-Jc-Eaw" eventType="touchUpInside" id="H4G-iC-Dk3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="23r-nI-2Nk" firstAttribute="leading" secondItem="SIf-Xn-YZT" secondAttribute="leading" constant="102" id="4IQ-HB-74a"/>
+                            <constraint firstItem="23r-nI-2Nk" firstAttribute="top" secondItem="a6q-Wp-Wxz" secondAttribute="bottom" constant="152" id="6sw-NU-GpQ"/>
+                            <constraint firstItem="SIf-Xn-YZT" firstAttribute="trailing" secondItem="a6q-Wp-Wxz" secondAttribute="trailing" constant="20" id="8y5-n3-N28"/>
+                            <constraint firstItem="a6q-Wp-Wxz" firstAttribute="top" secondItem="SIf-Xn-YZT" secondAttribute="top" constant="211" id="NuO-E2-OFY"/>
+                            <constraint firstItem="SIf-Xn-YZT" firstAttribute="bottom" secondItem="23r-nI-2Nk" secondAttribute="bottom" constant="287" id="ZqM-QW-HqY"/>
+                            <constraint firstItem="a6q-Wp-Wxz" firstAttribute="leading" secondItem="SIf-Xn-YZT" secondAttribute="leading" constant="20" id="wKr-kB-3jg"/>
+                            <constraint firstItem="SIf-Xn-YZT" firstAttribute="trailing" secondItem="23r-nI-2Nk" secondAttribute="trailing" constant="102" id="zyO-65-zYh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SIf-Xn-YZT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="P4c-Jw-vgC"/>
+                    <connections>
+                        <outlet property="addfoldername" destination="a6q-Wp-Wxz" id="1fn-FR-guE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLO-5h-QyI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2042.0289855072465" y="456.69642857142856"/>
+        </scene>
+        <!--Add File View Controller-->
+        <scene sceneID="V14-Gd-7Fq">
+            <objects>
+                <viewController storyboardIdentifier="addfile_id" id="0rb-aK-Qt1" customClass="AddFileViewController" customModule="Davaleba_folderebis_sheqmna" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eE5-Rc-24W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="FileName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mf5-go-xTy">
+                                <rect key="frame" x="20" y="260" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3a7-SU-Xo1">
+                                <rect key="frame" x="20" y="356" width="374" height="184"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="37t-lu-aZ5"/>
+                                    <constraint firstAttribute="height" constant="184" id="doe-Nl-kmW"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HX5-40-jJt">
+                                <rect key="frame" x="102" y="622" width="210" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addfilebutton:" destination="0rb-aK-Qt1" eventType="touchUpInside" id="eK0-uK-pw7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HX5-40-jJt" firstAttribute="top" secondItem="3a7-SU-Xo1" secondAttribute="bottom" constant="82" id="2nV-G5-vTT"/>
+                            <constraint firstItem="Dnv-oW-a65" firstAttribute="trailing" secondItem="HX5-40-jJt" secondAttribute="trailing" constant="102" id="5ex-Qw-RnN"/>
+                            <constraint firstItem="3a7-SU-Xo1" firstAttribute="leading" secondItem="Dnv-oW-a65" secondAttribute="leading" constant="20" id="8hZ-Ks-HCb"/>
+                            <constraint firstItem="HX5-40-jJt" firstAttribute="leading" secondItem="Dnv-oW-a65" secondAttribute="leading" constant="102" id="M0X-Lu-VqX"/>
+                            <constraint firstItem="Dnv-oW-a65" firstAttribute="trailing" secondItem="3a7-SU-Xo1" secondAttribute="trailing" constant="20" id="W7g-KV-HpN"/>
+                            <constraint firstItem="3a7-SU-Xo1" firstAttribute="top" secondItem="Mf5-go-xTy" secondAttribute="bottom" constant="62" id="dxg-OZ-bcC"/>
+                            <constraint firstItem="Dnv-oW-a65" firstAttribute="trailing" secondItem="Mf5-go-xTy" secondAttribute="trailing" constant="20" id="kGZ-jo-pWx"/>
+                            <constraint firstItem="Mf5-go-xTy" firstAttribute="top" secondItem="Dnv-oW-a65" secondAttribute="top" constant="216" id="kWS-d8-PXw"/>
+                            <constraint firstItem="Mf5-go-xTy" firstAttribute="leading" secondItem="Dnv-oW-a65" secondAttribute="leading" constant="20" id="vu9-eW-vHa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dnv-oW-a65"/>
+                    </view>
+                    <connections>
+                        <outlet property="addedfilecontext" destination="3a7-SU-Xo1" id="A3w-nN-bt3"/>
+                        <outlet property="addedfilename" destination="Mf5-go-xTy" id="PKv-2d-Pbj"/>
+                        <outlet property="buttonname" destination="HX5-40-jJt" id="472-G0-NyH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6u7-Me-xZ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2926.0869565217395" y="-238.39285714285714"/>
+        </scene>
+        <!--Folder View View Controller-->
+        <scene sceneID="w1a-W2-whA">
+            <objects>
+                <viewController storyboardIdentifier="folderview_id" id="2SA-KW-q16" customClass="FolderViewViewController" customModule="Davaleba_folderebis_sheqmna" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FWm-Yc-nfz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hu8-F8-OUG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cellview_id" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableview_id" rowHeight="371" id="WaD-TI-jaW" customClass="TableViewCell" customModule="Davaleba_folderebis_sheqmna" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="371"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WaD-TI-jaW" id="FF2-yj-ez4">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="371"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bzL-XJ-z8P">
+                                                    <rect key="frame" x="20" y="11" width="374" height="349"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bzL-XJ-z8P" firstAttribute="leading" secondItem="FF2-yj-ez4" secondAttribute="leadingMargin" id="Xzx-we-fkJ"/>
+                                                <constraint firstItem="bzL-XJ-z8P" firstAttribute="trailing" secondItem="FF2-yj-ez4" secondAttribute="trailingMargin" id="b6g-dj-wpe"/>
+                                                <constraint firstItem="bzL-XJ-z8P" firstAttribute="bottom" secondItem="FF2-yj-ez4" secondAttribute="bottomMargin" id="fGI-69-Qnv"/>
+                                                <constraint firstItem="bzL-XJ-z8P" firstAttribute="top" secondItem="FF2-yj-ez4" secondAttribute="topMargin" id="tf9-uN-iXT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="textciew" destination="bzL-XJ-z8P" id="QOl-Wf-Lrb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vRO-WK-Ow8" firstAttribute="trailing" secondItem="hu8-F8-OUG" secondAttribute="trailing" id="Vjr-sL-OUg"/>
+                            <constraint firstItem="hu8-F8-OUG" firstAttribute="top" secondItem="vRO-WK-Ow8" secondAttribute="top" id="Y6o-K0-jc2"/>
+                            <constraint firstItem="hu8-F8-OUG" firstAttribute="leading" secondItem="vRO-WK-Ow8" secondAttribute="leading" id="pqo-rl-TrZ"/>
+                            <constraint firstItem="vRO-WK-Ow8" firstAttribute="bottom" secondItem="hu8-F8-OUG" secondAttribute="bottom" id="t0F-0W-JMz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vRO-WK-Ow8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Tp-3G-fKi">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="4uo-7G-Fh8">
+                            <connections>
+                                <action selector="addfile:" destination="2SA-KW-q16" id="Un9-ef-MHc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableview" destination="hu8-F8-OUG" id="WYY-xx-kDV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rbW-Uz-C63" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2092.753623188406" y="-238.39285714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Bc6-hb-a9r">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CZr-gI-DEP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3pX-XQ-gyD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="G4K-aP-jlR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RRD-JX-J9a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="folder" catalog="system" width="128" height="95"/>
+    </resources>
+</document>
