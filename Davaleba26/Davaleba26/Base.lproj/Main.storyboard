@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Davaleba26" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Question" translatesAutoresizingMaskIntoConstraints="NO" id="K5n-4b-kpR">
+                                <rect key="frame" x="20" y="261" width="374" height="374"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUN-2o-7KL">
+                                <rect key="frame" x="20" y="675" width="374" height="72"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <state key="normal" title="CHOOSE"/>
+                                <connections>
+                                    <segue destination="i35-RK-MtF" kind="show" id="kb5-Lg-Ier"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfm-45-Daf">
+                                <rect key="frame" x="20" y="130" width="374" height="123"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZUN-2o-7KL" secondAttribute="bottom" constant="115" id="0xe-e0-1up"/>
+                            <constraint firstItem="hfm-45-Daf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="86" id="C7X-af-WYG"/>
+                            <constraint firstItem="hfm-45-Daf" firstAttribute="trailing" secondItem="K5n-4b-kpR" secondAttribute="trailing" id="ELb-ZR-6HA"/>
+                            <constraint firstItem="K5n-4b-kpR" firstAttribute="trailing" secondItem="ZUN-2o-7KL" secondAttribute="trailing" id="LiN-ME-MQU"/>
+                            <constraint firstItem="ZUN-2o-7KL" firstAttribute="top" secondItem="K5n-4b-kpR" secondAttribute="bottom" constant="40" id="RZP-4Y-9af"/>
+                            <constraint firstItem="K5n-4b-kpR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Xtk-xl-CAP"/>
+                            <constraint firstItem="hfm-45-Daf" firstAttribute="leading" secondItem="K5n-4b-kpR" secondAttribute="leading" id="l50-hd-EBn"/>
+                            <constraint firstItem="K5n-4b-kpR" firstAttribute="top" secondItem="hfm-45-Daf" secondAttribute="bottom" constant="8" id="ozH-Ge-eeE"/>
+                            <constraint firstItem="K5n-4b-kpR" firstAttribute="leading" secondItem="ZUN-2o-7KL" secondAttribute="leading" id="srW-F1-SVq"/>
+                            <constraint firstItem="hfm-45-Daf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zb3-ae-R9W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="memeimg" destination="K5n-4b-kpR" id="Njw-sM-qYJ"/>
+                        <outlet property="memetext" destination="hfm-45-Daf" id="ZQx-LV-EVA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65.217391304347828" y="97.767857142857139"/>
+        </scene>
+        <!--ViewC2-->
+        <scene sceneID="jad-86-Lrl">
+            <objects>
+                <viewController id="i35-RK-MtF" customClass="ViewC2" customModule="Davaleba26" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l0w-ww-b6s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cW-Ed-Gig">
+                                <rect key="frame" x="20" y="302" width="374" height="250"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <state key="normal" title="CHOOSE"/>
+                                <connections>
+                                    <action selector="SecondButton:" destination="i35-RK-MtF" eventType="touchUpInside" id="sJg-1I-hG2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aq suratebis damatebac shemedzlo buttonebze mara ese mirchevnia(imedia qola ar damakldeba amis gamo)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEY-gW-JB2">
+                                <rect key="frame" x="20" y="560" width="374" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="RvQ-4S-nnT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKE-4y-x0m">
+                                <rect key="frame" x="20" y="44" width="374" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="iC9-xY-Wbv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <state key="normal" title="CHOOSE"/>
+                                <connections>
+                                    <action selector="FirstButton:" destination="i35-RK-MtF" eventType="touchUpInside" id="50R-PW-mNl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2Yg-Da-hj0" firstAttribute="bottom" secondItem="tEY-gW-JB2" secondAttribute="bottom" constant="94" id="8Ic-6x-CQX"/>
+                            <constraint firstItem="5cW-Ed-Gig" firstAttribute="top" secondItem="gKE-4y-x0m" secondAttribute="bottom" constant="8" id="8c1-Zc-6SJ"/>
+                            <constraint firstItem="tEY-gW-JB2" firstAttribute="top" secondItem="5cW-Ed-Gig" secondAttribute="bottom" constant="8" id="cI8-N2-dRN"/>
+                            <constraint firstItem="gKE-4y-x0m" firstAttribute="trailing" secondItem="l0w-ww-b6s" secondAttribute="trailingMargin" id="dD0-Ct-uEH"/>
+                            <constraint firstItem="gKE-4y-x0m" firstAttribute="leading" secondItem="l0w-ww-b6s" secondAttribute="leadingMargin" id="dwz-Qr-bTe"/>
+                            <constraint firstItem="gKE-4y-x0m" firstAttribute="top" secondItem="2Yg-Da-hj0" secondAttribute="top" constant="44" id="k64-uZ-wbm"/>
+                            <constraint firstItem="gKE-4y-x0m" firstAttribute="leading" secondItem="5cW-Ed-Gig" secondAttribute="leading" id="ki2-vt-9jY"/>
+                            <constraint firstItem="5cW-Ed-Gig" firstAttribute="trailing" secondItem="tEY-gW-JB2" secondAttribute="trailing" id="kod-cO-Gmr"/>
+                            <constraint firstItem="gKE-4y-x0m" firstAttribute="trailing" secondItem="5cW-Ed-Gig" secondAttribute="trailing" id="pOc-Xg-wjl"/>
+                            <constraint firstItem="5cW-Ed-Gig" firstAttribute="leading" secondItem="tEY-gW-JB2" secondAttribute="leading" id="tMe-vM-UbP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Yg-Da-hj0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sh0-Xy-Rlg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eFt-Ty-Upw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750.72463768115949" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Question" width="374" height="374"/>
+    </resources>
+</document>
