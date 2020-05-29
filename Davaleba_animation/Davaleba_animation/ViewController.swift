@@ -9,9 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var dropdownview: UIView!
     @IBOutlet weak var tableView: UITableView!
-    let shapes1 = ["square1","star1","circle1","triangle1"]
-    let shapes = ["square","star","circle","triangle"]
+    @IBOutlet weak var plusview: UIView!
+    var shapes1 = ["square1","star1","circle1","triangle1"]
+    var shapes = ["square","star","circle","triangle"]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -39,6 +41,57 @@ class ViewController: UIViewController {
                     }
                 }
             }
+    }
+    
+    func animateView() {
+        UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 0.65, initialSpringVelocity: 0.2, options: [], animations: {
+            self.dropdownview.frame.origin.y += 250
+            self.tableView.frame.origin.y += 100
+            self.plusview.isHidden = true
+        }) { (f) in
+        }
+    }
+    func unAnimateView() {
+        UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 0.65, initialSpringVelocity: 0.2, options: [], animations: {
+            self.dropdownview.frame.origin.y -= 250
+            self.tableView.frame.origin.y -= 100
+        }) { (f) in
+                    self.plusview.isHidden = false
+        }
+    }
+    func disappearView(figure: String) {
+        shapes.append(figure)
+        shapes1.append("\(figure)1")
+        UIView.transition(with: dropdownview, duration: 0.4, options: .transitionFlipFromBottom,
+                          animations: {}, completion: nil)
+        UIView.animate(withDuration: 0.35, delay: 0, options: [], animations: {
+            self.dropdownview.alpha = 0
+        }) { (f) in
+            self.dropdownview.frame.origin.y -= 250
+            self.dropdownview.alpha = 1
+            self.tableView.frame.origin.y -= 100
+            self.plusview.isHidden = false
+            self.tableView.reloadData()
+        }
+    }
+    @IBAction func onplustap(_ sender: UITapGestureRecognizer) {
+        animateView()
+        tableView.reloadData()
+    }
+    @IBAction func onXtap(_ sender: UITapGestureRecognizer) {
+         unAnimateView()
+    }
+    @IBAction func oncircletap(_ sender: UITapGestureRecognizer) {
+        disappearView(figure: "circle")
+    }
+    @IBAction func onsquaretap(_ sender: UITapGestureRecognizer) {
+        disappearView(figure: "square")
+    }
+    @IBAction func onstartap(_ sender: UITapGestureRecognizer) {
+        disappearView(figure: "star")
+    }
+    @IBAction func ontriangletap(_ sender: UITapGestureRecognizer) {
+        disappearView(figure: "triangle")
     }
 }
 extension ViewController: UITableViewDataSource{
