@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B5F6F542499FC430025545C /* Coffeesmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F6F532499FC430025545C /* Coffeesmodel.swift */; };
+		2B5F6F562499FCA00025545C /* HomeModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F6F552499FCA00025545C /* HomeModelView.swift */; };
 		2BA3DE092498A476004A9995 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3DE082498A476004A9995 /* profileViewController.swift */; };
 		2BA3DE0B2498A483004A9995 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3DE0A2498A483004A9995 /* homeViewController.swift */; };
 		2BA3DE0D2498A48F004A9995 /* cupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3DE0C2498A48F004A9995 /* cupViewController.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B5F6F532499FC430025545C /* Coffeesmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffeesmodel.swift; sourceTree = "<group>"; };
+		2B5F6F552499FCA00025545C /* HomeModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModelView.swift; sourceTree = "<group>"; };
 		2BA3DE082498A476004A9995 /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		2BA3DE0A2498A483004A9995 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		2BA3DE0C2498A48F004A9995 /* cupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cupViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +59,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B5F6F512499FB300025545C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2BC600142497AE6300FC82F1 /* LaunchScreen.storyboard */,
+				2BC6000C2497AE5B00FC82F1 /* Main.storyboard */,
+				2BC600232498174000FC82F1 /* CupStoryboard.storyboard */,
+				2BC60027249817A000FC82F1 /* ProfileStoryboard.storyboard */,
+				2BC600252498179100FC82F1 /* HomeStoryboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2B5F6F522499FB430025545C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2BC6000A2497AE5B00FC82F1 /* ViewController.swift */,
+				2BA3DE082498A476004A9995 /* profileViewController.swift */,
+				2BA3DE0C2498A48F004A9995 /* cupViewController.swift */,
+				2BA3DE0A2498A483004A9995 /* homeViewController.swift */,
+				2BA3DE0E2498AA2B004A9995 /* TableViewCell.swift */,
+				2BA3DE122498AC78004A9995 /* FullViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		2BC600042497AE5B00FC82F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -66,56 +95,49 @@
 		2BC600052497AE5B00FC82F1 /* Davaleba41v2 */ = {
 			isa = PBXGroup;
 			children = (
-				2BC60022249816D300FC82F1 /* Profile */,
-				2BC60021249816BE00FC82F1 /* Home */,
-				2BC60020249816B100FC82F1 /* Cup */,
-				2BC6001F249816A100FC82F1 /* Main */,
-				2BC600062497AE5B00FC82F1 /* AppDelegate.swift */,
-				2BC600082497AE5B00FC82F1 /* SceneDelegate.swift */,
-				2BC600122497AE6300FC82F1 /* Assets.xcassets */,
-				2BC600142497AE6300FC82F1 /* LaunchScreen.storyboard */,
 				2BC600172497AE6300FC82F1 /* Info.plist */,
+				2BC60022249816D300FC82F1 /* ViewModel */,
+				2BC60021249816BE00FC82F1 /* View */,
+				2BC60020249816B100FC82F1 /* Model */,
+				2BC6001F249816A100FC82F1 /* Additionals */,
 				2BC6000F2497AE5B00FC82F1 /* Davaleba41v2.xcdatamodeld */,
 			);
 			path = Davaleba41v2;
 			sourceTree = "<group>";
 		};
-		2BC6001F249816A100FC82F1 /* Main */ = {
+		2BC6001F249816A100FC82F1 /* Additionals */ = {
 			isa = PBXGroup;
 			children = (
-				2BC6000C2497AE5B00FC82F1 /* Main.storyboard */,
-				2BC6000A2497AE5B00FC82F1 /* ViewController.swift */,
+				2BC600122497AE6300FC82F1 /* Assets.xcassets */,
+				2BC600082497AE5B00FC82F1 /* SceneDelegate.swift */,
+				2BC600062497AE5B00FC82F1 /* AppDelegate.swift */,
 			);
-			path = Main;
+			path = Additionals;
 			sourceTree = "<group>";
 		};
-		2BC60020249816B100FC82F1 /* Cup */ = {
+		2BC60020249816B100FC82F1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2BC600232498174000FC82F1 /* CupStoryboard.storyboard */,
-				2BA3DE0C2498A48F004A9995 /* cupViewController.swift */,
+				2B5F6F532499FC430025545C /* Coffeesmodel.swift */,
 			);
-			path = Cup;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		2BC60021249816BE00FC82F1 /* Home */ = {
+		2BC60021249816BE00FC82F1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2BC600252498179100FC82F1 /* HomeStoryboard.storyboard */,
-				2BA3DE0A2498A483004A9995 /* homeViewController.swift */,
-				2BA3DE0E2498AA2B004A9995 /* TableViewCell.swift */,
-				2BA3DE122498AC78004A9995 /* FullViewController.swift */,
+				2B5F6F522499FB430025545C /* Controllers */,
+				2B5F6F512499FB300025545C /* Storyboards */,
 			);
-			path = Home;
+			path = View;
 			sourceTree = "<group>";
 		};
-		2BC60022249816D300FC82F1 /* Profile */ = {
+		2BC60022249816D300FC82F1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				2BC60027249817A000FC82F1 /* ProfileStoryboard.storyboard */,
-				2BA3DE082498A476004A9995 /* profileViewController.swift */,
+				2B5F6F552499FCA00025545C /* HomeModelView.swift */,
 			);
-			path = Profile;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		2BC6FFFA2497AE5B00FC82F1 = {
@@ -205,6 +227,8 @@
 				2BA3DE0F2498AA2B004A9995 /* TableViewCell.swift in Sources */,
 				2BA3DE0B2498A483004A9995 /* homeViewController.swift in Sources */,
 				2BC600072497AE5B00FC82F1 /* AppDelegate.swift in Sources */,
+				2B5F6F562499FCA00025545C /* HomeModelView.swift in Sources */,
+				2B5F6F542499FC430025545C /* Coffeesmodel.swift in Sources */,
 				2BA3DE0D2498A48F004A9995 /* cupViewController.swift in Sources */,
 				2BC600112497AE5B00FC82F1 /* Davaleba41v2.xcdatamodeld in Sources */,
 				2BA3DE092498A476004A9995 /* profileViewController.swift in Sources */,
