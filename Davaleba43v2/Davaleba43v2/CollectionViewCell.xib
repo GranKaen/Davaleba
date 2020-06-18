@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ccell_id" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="Davaleba43v2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="208" height="183"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="208" height="183"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VYK-XZ-urk">
+                        <rect key="frame" x="0.0" y="0.0" width="208" height="183"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cPG-EU-ye5">
+                                <rect key="frame" x="0.0" y="0.0" width="208" height="183"/>
+                            </imageView>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Dw-Xh-pnY" customClass="GradientView" customModule="Davaleba43v2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="208" height="183"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdr-MF-NT6">
+                                        <rect key="frame" x="20" y="154" width="168" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="168" id="Fhu-Nc-wDq"/>
+                                            <constraint firstAttribute="height" constant="21" id="vty-IG-bcz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Rdr-MF-NT6" firstAttribute="leading" secondItem="8Dw-Xh-pnY" secondAttribute="leading" constant="20" id="F6T-4H-Co4"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rdr-MF-NT6" secondAttribute="bottom" constant="8" id="b4B-yp-kDx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cPG-EU-ye5" firstAttribute="leading" secondItem="VYK-XZ-urk" secondAttribute="leading" id="22c-2B-Fif"/>
+                            <constraint firstItem="8Dw-Xh-pnY" firstAttribute="top" secondItem="VYK-XZ-urk" secondAttribute="top" id="28Q-17-GRH"/>
+                            <constraint firstItem="cPG-EU-ye5" firstAttribute="top" secondItem="VYK-XZ-urk" secondAttribute="top" id="ACC-Tz-CRS"/>
+                            <constraint firstAttribute="trailing" secondItem="cPG-EU-ye5" secondAttribute="trailing" id="c55-3L-Wdq"/>
+                            <constraint firstAttribute="bottom" secondItem="8Dw-Xh-pnY" secondAttribute="bottom" id="ePQ-Ke-Lek"/>
+                            <constraint firstAttribute="trailing" secondItem="8Dw-Xh-pnY" secondAttribute="trailing" id="nqP-G2-sl5"/>
+                            <constraint firstItem="8Dw-Xh-pnY" firstAttribute="leading" secondItem="VYK-XZ-urk" secondAttribute="leading" id="vGm-cZ-sOm"/>
+                            <constraint firstAttribute="bottom" secondItem="cPG-EU-ye5" secondAttribute="bottom" id="yWL-9X-1AM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VYK-XZ-urk" secondAttribute="trailing" id="GFZ-zB-B8m"/>
+                <constraint firstAttribute="bottom" secondItem="VYK-XZ-urk" secondAttribute="bottom" id="hMV-54-LqB"/>
+                <constraint firstItem="VYK-XZ-urk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jtP-EL-XbJ"/>
+                <constraint firstItem="VYK-XZ-urk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="u7Z-eG-IFq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="208" height="183"/>
+            <connections>
+                <outlet property="labelView" destination="8Dw-Xh-pnY" id="WAG-iW-fz9"/>
+                <outlet property="myImage" destination="cPG-EU-ye5" id="AOf-qm-544"/>
+                <outlet property="myLabel" destination="Rdr-MF-NT6" id="fec-YW-IC9"/>
+            </connections>
+            <point key="canvasLocation" x="17.39130434782609" y="157.03125"/>
+        </collectionViewCell>
+    </objects>
+</document>
