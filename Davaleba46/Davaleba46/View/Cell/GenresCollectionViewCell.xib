@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="genres_cell" id="gTV-IL-0wX" customClass="GenresCollectionViewCell" customModule="Davaleba46" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="179" height="237"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="179" height="237"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WeQ-oE-Rwi">
+                        <rect key="frame" x="0.0" y="0.0" width="179" height="237"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hU6-em-r2k">
+                                <rect key="frame" x="8" y="108" width="163" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ljm-OK-86y"/>
+                                    <constraint firstAttribute="width" constant="163" id="qXM-c4-jok"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hU6-em-r2k" firstAttribute="centerX" secondItem="WeQ-oE-Rwi" secondAttribute="centerX" id="a8b-Bo-WbH"/>
+                            <constraint firstItem="hU6-em-r2k" firstAttribute="centerY" secondItem="WeQ-oE-Rwi" secondAttribute="centerY" id="rnO-nd-Ztu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="WeQ-oE-Rwi" secondAttribute="bottom" id="3tN-C8-s7q"/>
+                <constraint firstAttribute="trailing" secondItem="WeQ-oE-Rwi" secondAttribute="trailing" id="JUM-HG-mwP"/>
+                <constraint firstItem="WeQ-oE-Rwi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="lk6-aH-Rhs"/>
+                <constraint firstItem="WeQ-oE-Rwi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ol3-ZC-SJL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="179" height="237"/>
+            <connections>
+                <outlet property="title" destination="hU6-em-r2k" id="lQJ-d7-NBE"/>
+                <outlet property="view" destination="WeQ-oE-Rwi" id="DXE-8x-1Ew"/>
+            </connections>
+            <point key="canvasLocation" x="225.36231884057972" y="175.11160714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>
